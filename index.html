@@ -24,7 +24,7 @@
 <html>
 <body>
 
-<h1>Tag</h1>
+<h4>Tag</h4>
 <h2> Case sensitive</h2>
 <h3>Html</h3>
 
@@ -63,20 +63,45 @@
 
 <a href="https://www.salpaus.fi/" target="_blank">Visit Salpaus.fi</a> 
 
+
 </body>
 </html>
 
 <a href="portfolio.html" target="_blank">Visit Portfolio</a> 
-
+       
+<html>
+<head>
+<style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<!DOCTYPE html>
 <html>
 <head>
 <style>
 .myDiv {
   border: 5px outset green;
-  background-color: darkblue;    
+  background-color: rgb(72, 0, 139);    
   text-align: center;
-  color:white;
+  color: white;
+
+  
+  border-radius: 15px;
+  padding: 10px;      
+  margin: 20px;   
+  border-radius: 0;               
+  transition: border-radius 0.3s; 
 }
+
+.myDiv:hover {
+  border-radius: 15px; 
+}    
+
 </style>
 </head>
 <body>
@@ -84,7 +109,12 @@
 <h1>The div element</h1>
 
 <div class="myDiv">
-  <h2>Testailu</h2>
+  <h2>Testailua</h2>
+  <p>This is some text in a div element.</p>
+</div>
+
+</body>
+</html>
 
   
 <html>
@@ -107,7 +137,69 @@
   <input type="submit" value="Submit">
 </form> 
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+</html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(255, 247, 0);
+}
+
+h1 {
+  color: rgb(0, 6, 128);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+
+ <!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keskitetty sivu</title>
+  <style>
+    body {
+      text-align: center;   /* Tekstit keskelle vaakasuunnassa */
+    }
+  </style>
+</head>
+<body>
+
+
+
+<html>
+<head>
+<style>
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+</style>
+</head>
+<body>
+
+
+<p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
 
 </body>
 </html>
+
+ <html>
+<head>
+<style>
+h1 {
+  font-size: 90px;
+} 
+h2 {
+  font-size: 60px;
+}
+
