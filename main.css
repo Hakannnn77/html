@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(255, 247, 0); /* eski arka plan rengi */
+    color: rgb(0, 6, 128); /* metin rengi */
+    font-family: Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  h1 { font-size: 90px; }
+  h2 { font-size: 60px; }
+  h3 { font-size: 40px; }
+  
+  p { font-size: 20px; }
+  
+  .myDiv {
+    border: 5px outset green;
+    background-color: rgb(72, 0, 139);
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 0;
+    text-align: center;
+    transition: border-radius 0.3s;
+  }
+  
+  .myDiv:hover { border-radius: 15px; }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text-small { display: block; }
+  .text-large { display: none; }
+  
+  @media only screen and (min-width: 992px) {
+    body { background-color: orange; }
+    .text-small { display: none; }
+    .text-large { display: block; }
+  }
+  
