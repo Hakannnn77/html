@@ -121,4 +121,70 @@ document.getElementById("myP").innerHTML = "Kommenti";
 </script>
 
 <h1>Miten var, let ja const eroavat toisistaan.</h1>
-<p></p>
+<p>var → vanha, function scope, voi julistaa uudestaan.<br>
+  let → uusi, block scope, arvoa voi muuttaa mutta ei julistaa uudestaan samassa lohkossa.<br>
+  const → block scope, arvoa ei voi muuttaa (mutta objektin/taulukon sisältöä voi).</p>
+
+  
+<h2>JavaScript Comparisons</h2>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="17" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let voteable;
+  let age = Number(document.getElementById("age").value);
+  if (isNaN(age)) {
+    voteable = "Input is not a number";
+  } else {
+    voteable = (age < 18) ? "ala" : "Täys";
+  }
+  document.getElementById("demo").innerHTML = voteable + "ikänen";
+}
+</script>
+
+<h1>JavaScript Loops</h1>
+<h2>The While Loop</h2>
+
+<p id="loopDemo"></p>
+
+<script>
+let whileText = "";
+let i = 0;
+while (i < 5) {
+  whileText += "Huhuu?!<br>";
+  i++;
+}
+document.getElementById("loopDemo").innerHTML = whileText;
+</script>
+
+<h2>The For Loop</h2>
+
+<p id="forDemo"></p>
+
+<script>
+const cars = ["Koira", "Kissa", "Hevonen", "Hiiri", "Marsu"];
+let forText = "";
+
+for (let i = 0; i < cars.length; i++) {
+  forText += cars[i] + "!<br>";
+}
+
+document.getElementById("forDemo").innerHTML = forText;
+</script>
+<h1>JavaScript Functions</h1>
+<p id="greetDemo"></p>
+
+<script>
+function greet(name) {
+  return "Hello " + name;
+}
+
+document.getElementById("greetDemo").innerHTML = greet("Hakan Isikli");
+</script>
