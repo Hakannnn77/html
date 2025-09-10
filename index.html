@@ -8,28 +8,27 @@
 </head>
 <body>
 
-  <!-- 1. Tyhjän tagin käyttö vs. tavallinen tagi -->
+ 
   <h1>Miten tyhjän tagin käyttö eroaa muiden tagien käytöstä?</h1>
   <p>Tyhjät tagit eivät sisällä sisältöä eivätkä tarvitse sulkevaa tagia, esim. &lt;br&gt; tai &lt;img&gt;.<br>
     Tavalliset tagit sisältävät sisältöä ja tarvitsevat sulkevan tagin, esim. &lt;p&gt;Teksti&lt;/p&gt;.</p>
 
-  <!-- 2. Case sensitive -->
+ 
   <h1>Mitä Case sensitive tarkoittaa?</h1>
   <p>"Case sensitive" tarkoittaa, että isot ja pienet kirjaimet lasketaan eri merkeiksi. Esim. A ≠ a.</p>
 
-  <!-- 3. Three headings -->
+ 
   <h1>Heading 1</h1>
   <h2>Heading 2</h2>
   <h3>Heading 3</h3>
-
-  <!-- 4. Paragraph -->
+ 
   <p>Tämä paragraph käyttää &lt;p&gt; tag.</p>
 
-  <!-- 5. Image -->
+  
   <h2>Kuva</h2>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Cristiano_Ronaldo%2C_2023.jpg/250px-Cristiano_Ronaldo%2C_2023.jpg" alt="Cristiano Ronaldo">
 
-  <!-- 6. List -->
+ 
   <h2>Paras jalkapallo pelajat</h2>
   <ul>
     <li>Ronaldo</li>
@@ -37,32 +36,89 @@
     <li>Neymar</li>
   </ul>
 
-  <!-- 7. Links -->
+
   <h2>Links</h2>
   <a href="https://www.salpaus.fi/" target="_blank">Visit Salpaus.fi</a><br>
   <a href="portfolio.html" target="_blank">Go to Portfolio</a>
 
-  <!-- 8. Div element with hover border-radius -->
-  <h2>Div Example </h2>
-  <div class="myDiv">
-    <p>Testailua</p>
+  
+  <h2>Div Example</h2>
+<div class="myDiv">
+  <p id="myParagraph">Testailua</p>
 
-    <form action="#">
-      <label for="fname">First Name:</label><br>
-      <input type="text" id="fname" name="fname"><br>
+  <button onclick="changeColor()">Vaihda väri</button>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br>
+  <form action="#">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
 
-      <label for="age">Age:</label><br>
-      <input type="number" id="age" name="age"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
 
-      <input type="submit" value="Submit">
-    </form>
-  </div>
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age"><br><br>
 
-  <!-- 9. Name and Email box -->
-  <div id="output">Name: Hakan Isikli<br>Email: hakan.isikli@edu.salpaus.fi</div>
+    <input type="submit" value="Submit">
+  </form>
+</div>
 
-</body>
-</html>
+<script>
+  function changeColor() {
+    document.getElementById("myParagraph").style.color = "green";
+  }
+  </script>
+  
+  <style>
+  button {
+    padding: 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 25px;
+}
+  </style>
+
+
+<button onclick="changeText()">Vaihda teksti</button>
+
+<script>
+function changeText() {
+  document.getElementById("myParagraph").innerText = "Changed";
+}
+</script>
+
+<style>
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+</style>
+
+
+<h1 id="myH"></h1>
+<p id="myP"></p>
+
+<script>
+// Change heading:
+document.getElementById("myH").innerHTML = "JavaScript Kommentit";
+// Change paragraph:
+document.getElementById("myP").innerHTML = "Kommenti";
+</script>
+
+<h1>Miten var, let ja const eroavat toisistaan.</h1>
+<p></p>
